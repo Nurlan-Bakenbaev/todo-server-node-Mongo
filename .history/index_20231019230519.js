@@ -19,7 +19,7 @@ async function start() {
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     app.listen(PORT, () => {
-      console.log(PORT);
+    console.log(PORT)
     });
   } catch (error) {
     console.error(error);
