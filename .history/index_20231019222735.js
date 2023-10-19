@@ -13,7 +13,7 @@ app.use("/api/todo", todoRouter);
 
 async function start() {
   try {
-    await mongoose.connect(process.env.MONGO_DB);
+    await mongoose.connect(processMONGO_DB);
     console.log("mongo DB is working");
     app.listen(PORT, () => {
       console.log(`Server on ${PORT}`);
